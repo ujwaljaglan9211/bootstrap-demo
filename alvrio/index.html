@@ -10,8 +10,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <!-- Main css file -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   </head>
@@ -20,12 +19,12 @@
     <header id="header" class="">
       <nav class="navbar navbar-expand-lg navbar-nobg fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="#">
-            DevGroup
+          <a class="navbar-brand" href="#">Dev<span>Group</span>
             <!-- <img src="assets/images/logo.svg" class="d-inline-block align-top" alt="Alvrio Logo" title="Alvrio Logo"> -->
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <i class="fas fa-bars"></i>
           </button>     
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
@@ -59,16 +58,16 @@
     </header>
     <!-- Navigation menu ends here -->
     <!-- Home banner starts here -->
-    <section class="banner content">
+    <section class="banner content" id="home">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 m-auto">
+          <div class="col-md-6 order-2 m-auto">
             <span>Oh, Hello</span>
             <h1>We are a software development and design company</h1>
-            <p>High-quality digital resources which make<br>your design workflow faster and easier!</p>
+            <p class="text-justify">High-quality digital resources which make<br>your design workflow faster and easier!</p>
             <a href="#" class="button">About us</a>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 order-md-12">
             <img src="assets/images/landingpage_image.JPG" alt="Home Banner" title="Home Banner" />
           </div>
         </div>
@@ -76,28 +75,31 @@
     </section>
     <!-- Home banner ends here -->
     <!-- About starts here -->
-    <section class="content">
+    <section class="content services" id="services">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
             <div class="services-card">
-              <img src="" alt="Transparency" title="Transparency" />
+              <!-- <img src="assets/images/transparency.svg" alt="Transparency" title="Transparency" /> -->
+              <i class="fa fa-search fa-3x mb-4"></i>
               <h2>Transparency</h2>
-              <p>We have nothing to hide. We offer quality and knowledge.</p>
+              <p class="text-justify">We have nothing to hide. We offer quality and knowledge.</p>
             </div>
           </div>
           <div class="col-md-4">
             <div class="services-card">
-              <img src="" alt="Dedicated teams" title="Dedicated teams" />
+              <!-- <img src="" alt="Dedicated teams" title="Dedicated teams" /> -->
+              <i class="fa fa-hands fa-3x mb-4"></i>
               <h2>Dedicated teams</h2>
-              <p>Our teams members are business-oriented and will understand your goals.</p>
+              <p class="text-justify">Our teams members are business-oriented and will understand your goals.</p>
             </div>
           </div>
           <div class="col-md-4">
             <div class="services-card">
-              <img src="" alt="Smart processes" title="Smart processes" />
+              <!-- <img src="" alt="Smart processes" title="Smart processes" /> -->
+              <i class="fa fa-trophy fa-3x mb-4"></i>
               <h2>Smart processes</h2>
-              <p>Our products offer equally great design and technology.</p>
+              <p class="text-justify">Our products offer equally great design and technology.</p>
             </div>
           </div>
         </div>
@@ -105,68 +107,74 @@
     </section>
     <!-- About ends here -->
     <!-- Work process starts here -->
-    <section class="content">
+    <section class="content work-process" id="work-process">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 m-auto">
+          <div class="col-md-6 order-2 m-auto">
             <h2>Work process</h2>
-            <p>We've perfected a simple and time-tested processes for delivering high-quality products that your users will love.</p>
+            <p class="text-justify mt-5 mb-5">We've perfected a simple and time-tested processes for delivering high-quality products that your users will love.</p>
             <a href="" class="button">See how we do it</a>
           </div>
-          <div class="col-md-6">
-            <img src="assets/images/teamwork.JPG" alt="Work porcess" title="Work process" />
+          <div class="col-md-6 order-12">
+            <img src="assets/images/work-process.png" alt="Work porcess" title="Work process" />
           </div>
         </div>
       </div>
     </section>
     <!-- Work process ends here -->
     <!-- Services starts here -->
-    <section class="content">
+    <section class="content development" id="development">
       <div class="container">
-        <div class="col-12 text-center">
+        <div class="col-12 text-center mb-5">
           <h2>We develop and deliver</h2>
         </div>
         <div class="row">
           <div class="col-md-6">
-            <div class="development-card">
-              <img src="" alt="Web Development" title="Web Development" />
+            <div class="development-card web">
+              <!-- <img src="" alt="Web Development" title="Web Development" /> -->
+              <i class="fa fa-desktop fa-3x mb-4"></i>
               <h3>Web Development</h3>
-              <p>Productive, engaging and reliable solutions for business outcomes you deserve.</p>
+              <p class="text-justify">Productive, engaging and reliable solutions for business outcomes you deserve.</p>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="development-card">
-              <img src="" alt="Android Development" title="Android Development" />
+            <div class="development-card android">
+              <!-- <img src="" alt="Android Development" title="Android Development" /> -->
+              <i class="fab fa-android fa-3x mb-4"></i>
               <h3>Android Development</h3>
-              <p>We believe sophisticated utility apps that help Android devices reach their greatest potential.</p>
+              <p class="text-justify">We believe sophisticated utility apps that help Android devices reach their greatest potential.</p>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="development-card">
-              <img src="" alt="iOS Development" title="iOS Development" />
+            <div class="development-card ios">
+              <!-- <img src="" alt="iOS Development" title="iOS Development" /> -->
+              <i class="fab fa-apple fa-3x mb-4"></i>
               <h3>iOS Development</h3>
-              <p>We design and develops beautiful iPhone and iPad apps with a focus on user experience.</p>
+              <p class="text-justify">We design and develops beautiful iPhone and iPad apps with a focus on user experience.</p>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="development-card">
-              <img src="" alt="UX/UI" title="UX/UI" />
+            <div class="development-card ui-ux">
+              <!-- <img src="" alt="UX/UI" title="UX/UI" /> -->
+              <i class="fa fa-pencil-ruler fa-3x mb-4"></i>
               <h3>UX/UI</h3>
-              <p>Researches concept validation and prototyping.</p>
+              <p class="text-justify">Researches concept validation and prototyping.</p>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="development-card">
-              <img src="" alt="Project Management" title="Project Management" />
+            <div class="development-card project">
+              <!-- <img src="" alt="Project Management" title="Project Management" /> -->
+              <i class="fa fa-eye fa-3x mb-4"></i>
               <h3>Project Management</h3>
-              <p>Prioritzation requirements gathering, forecasting.</p>
+              <p class="text-justify">Prioritzation requirements gathering, forecasting.</p>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="development-card">
-              <img src="" alt="Quality Assurance" title="Quality Assurance" />
+            <div class="development-card quality">
+              <!-- <img src="" alt="Quality Assurance" title="Quality Assurance" /> -->
+              <i class="fa fa-thumbs-up fa-3x mb-4"></i>
               <h3>Quality Assurance</h3>
-              <p>Usability testing, surveys and interviews.</p>
+              <p class="text-justify">Usability testing, surveys and interviews.</p>
             </div>
           </div>
         </div>
@@ -174,28 +182,137 @@
     </section>
     <!-- Services ends here -->
     <!-- Contact us starts here -->
-    <section class="content">
+    <section class="content contact" id="contact">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
             <img src="assets/images/contactus.JPG" alt="Contact" title="Contact" />
           </div>
-          <div class="col-md-6">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-              <li class="nav-item">
-                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
-              </li>
-            </ul>
-            <div class="tab-content" id="myTabContent">
-              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+          <div class="col-md-6 m-auto">
+            <div class="row">
+              <div class="col-12 mb-5">
+                <h2>Let's talk</h2>
+              </div>
+              <div class="col-12">
+                <ul class="nav nav-tabs border-bottom-0" id="myTab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link border-0 active" id="ios-tab" data-toggle="tab" href="#ios" role="tab" aria-controls="ios" aria-selected="true">iOS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link border-0" id="android-tab" data-toggle="tab" href="#android" role="tab" aria-controls="android" aria-selected="false">Android</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link border-0" id="development-tab" data-toggle="tab" href="#development" role="tab" aria-controls="development" aria-selected="false">Development</a>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active mt-5" id="ios" role="tabpanel" aria-labelledby="ios-tab">
+                    <form action="" method="POST" class="needs-validation" novalidate>
+                      <div class="form-group">
+                        <input type="name" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Name*" id="name" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                      </div>
+                      <div class="form-group">
+                        <input type="email" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Email*" id="email" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                      </div>
+                      <div class="form-group">
+                        <input type="tel" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Phone" id="phone" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                      </div>
+                      <div class="form-group">
+                        <select class="form-control form-control-md border-top-0 border-left-0 border-right-0" name="country" id="country" required>
+                          <option>Select Country</option>
+                          <option value="India">India</option>
+                          <option value="India">India</option>
+                          <option value="India">India</option>
+                          <option value="India">India</option>
+                          <option value="India">India</option>
+                        </select>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                      </div>
+                      <div class="form-group">
+                        <textarea name="message" id="message" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Message" rows="6"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary button mt-2">Submit</button>
+                    </form>
+                  </div>
+                  <div class="tab-pane fade mt-5" id="android" role="tabpanel" aria-labelledby="android-tab">
+                    <form action="" method="POST" class="needs-validation" novalidate>
+                      <div class="form-group">
+                        <input type="name" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Name*" id="name" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                      </div>
+                      <div class="form-group">
+                        <input type="email" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Email*" id="email" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                      </div>
+                      <div class="form-group">
+                        <input type="tel" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Phone" id="phone" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                      </div>
+                      <div class="form-group">
+                        <select class="form-control form-control-md border-top-0 border-left-0 border-right-0" name="country" id="country" required>
+                          <option>Select Country</option>
+                          <option value="India">India</option>
+                          <option value="India">India</option>
+                          <option value="India">India</option>
+                          <option value="India">India</option>
+                          <option value="India">India</option>
+                        </select>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                      </div>
+                      <div class="form-group">
+                        <textarea name="message" id="message" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Message" rows="6"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary button mt-2">Submit</button>
+                    </form>
+                  </div>
+                  <div class="tab-pane fade mt-5" id="development" role="tabpanel" aria-labelledby="development-tab">
+                    <form action="" method="POST" class="needs-validation" novalidate>
+                      <div class="form-group">
+                        <input type="name" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Name*" id="name" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                      </div>
+                      <div class="form-group">
+                        <input type="email" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Email*" id="email" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                      </div>
+                      <div class="form-group">
+                        <input type="tel" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Phone" id="phone" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                      </div>
+                      <div class="form-group">
+                        <select class="form-control form-control-md border-top-0 border-left-0 border-right-0" name="country" id="country" required>
+                          <option>Select Country</option>
+                          <option value="India">India</option>
+                          <option value="India">India</option>
+                          <option value="India">India</option>
+                          <option value="India">India</option>
+                          <option value="India">India</option>
+                        </select>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                      </div>
+                      <div class="form-group">
+                        <textarea name="message" id="message" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Message" rows="6"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary button mt-2">Submit</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -203,8 +320,14 @@
     </section>
     <!-- Contact us ends here -->
     <!-- Footer starts here -->
-    <footer id="footer">
-
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="col-12">
+          <div class="copyright text-center">
+            <p>Design & Developed by Ujwal</p>
+          </div>
+        </div>
+      </div>
     </footer>
     <!-- Footer ends here -->
     <!-- Optional JavaScript -->
