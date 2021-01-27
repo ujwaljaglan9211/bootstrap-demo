@@ -9,6 +9,7 @@ a{
 }
 button{
   transition: 0.5s;
+  outline: none !important;
 }
 a:hover{
   color: #21357c;
@@ -30,18 +31,15 @@ h3{
   color:  #21357c;
 }
 p{
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 25px;
 }
 i{
   color: #82cac7;
   padding: 0px 0px 0px 15px;
 }
-img{
-  width: 100%;
-}
 .content{
-  margin: 100px 0px 100px 0px;
+  margin: 80px 0px 80px 0px;
   padding: 20px 0px 20px 0px;
 }
 a.button {
@@ -69,7 +67,7 @@ a.button {
   color: #82cac7;
 }
 .navbar li a.nav-link{
-  padding: 10px 20px 10px 20px !important
+  padding: 8px 20px 8px 20px !important
 }
 .navbar li.highlighting a.nav-link{
   border: 1px solid #82cac7;
@@ -82,8 +80,21 @@ a.button {
   border: 1px solid #21357c;
   background: #21357c;
 }
-section.services .services-card h2{
-  min-height: 80px;
+.navbar ul.navbar-nav li.nav-item .dropdown-menu{
+  border: 1px solid #82cac7;
+}
+.navbar ul.navbar-nav li.nav-item .dropdown-menu a.dropdown-item {
+  color: #82cac7;
+}
+.navbar ul.navbar-nav li.nav-item .dropdown-menu a.dropdown-item:hover {
+  color: #21357c;
+}
+section.services .services-card {
+  border: 1px solid #82cac7;
+  padding: 20px;
+  background: white;
+  border-radius: 30px;
+  display: inline-block;
 }
 section.work-process{
   background: #edf4f4;
@@ -92,6 +103,7 @@ section.work-process{
   margin: 20px;
   padding: 20px 20px 20px 20px;
   border-radius: 35px;
+  min-height: 211px;
 }
 .development .development-card i{
   color: #21357c;
@@ -119,19 +131,20 @@ section.work-process{
 }
 .contact input[type], .contact select, .contact textarea{
   padding: 10px;
-  background: #dedede;
+  border: 1px solid #82cac7;
+  background: transparent;
 }
-.contact input[type], .contact select, .contact textarea:focus{
-  border: none;
+.contact input[type]:focus, .contact select:focus, .contact textarea:focus{
   box-shadow: none;
-  background: #dedede;
+  border: 1px solid #82cac7;
+  background:transparent;
 }
 .contact button.button{
   border: 1px solid #82cac7;
   border-radius: 40px;
   color: #fff;
   background: #82cac7;
-  padding: 12px 38px 12px 40px;
+  padding: 10px 30px 10px 30px;
 }
 .contact button.button:hover{
   border: 1px solid #21357c;
@@ -141,7 +154,29 @@ footer.footer{
   background: #82cac7;
   padding: 50px 0px 50px 0px;
 }
-/* screen min width 1200px */
+/* screen max-width 576px */
+@media (max-width: 576px) {
+  section.services .services-card {
+    margin-bottom: 25px;
+  }
+}
+/* screen max-width 768px */
+@media (max-width: 768px) {
+  h2{
+    font-size: 30px;
+  }
+}
+/* screen min-width 576px and max-width 768px */
+@media (min-width: 576px) and (max-width: 768px) {
+  section.services .services-card {
+    padding: 10px;
+    min-height: 270px;
+  }
+  section.services .services-card h2{
+    min-height: 80px;
+  }
+}
+/* screen min-width 1200px */
 @media (min-width: 1200px){
   .container {
     max-width: 1300px;

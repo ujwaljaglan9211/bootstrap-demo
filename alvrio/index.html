@@ -7,7 +7,7 @@
     <title>Alvrio: Home Page</title>
     <!-- favicon -->
     <link rel="icon" href="demo_icon.gif" type="image/gif" sizes="16x16">
-    <!-- Latest compiled and minified CSS -->
+    <!-- Latest compiled and minified Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
@@ -112,8 +112,8 @@
         <div class="row">
           <div class="col-md-6 order-2 m-auto">
             <h2>Work process</h2>
-            <p class="text-justify mt-5 mb-5">We've perfected a simple and time-tested processes for delivering high-quality products that your users will love.</p>
-            <a href="" class="button">See how we do it</a>
+            <p class="text-justify mt-5">We've perfected a simple and time-tested processes for delivering high-quality products that your users will love.</p>
+            <a href="#" class="button mb-5">See how we do it</a>
           </div>
           <div class="col-md-6 order-md-12">
             <img src="assets/images/work-process.png" class="mw-100" alt="Work porcess" title="Work process" />
@@ -190,41 +190,41 @@
           </div>
           <div class="col-md-6 m-auto">
             <div class="row">
-              <div class="col-12 mb-5">
+              <div class="col-12 text-center mt-5 mb-5">
                 <h2>Let's talk</h2>
               </div>
               <div class="col-12">
-                <ul class="nav nav-tabs border-bottom-0" id="myTab" role="tablist">
+                <ul class="nav nav-tabs border-bottom-0" id="contact" role="tablist">
                   <li class="nav-item">
-                    <a class="nav-link border-0 active" id="ios-tab" data-toggle="tab" href="#ios" role="tab" aria-controls="ios" aria-selected="true">iOS</a>
+                    <a class="nav-link border-0 active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">iOS</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link border-0" id="android-tab" data-toggle="tab" href="#android" role="tab" aria-controls="android" aria-selected="false">Android</a>
+                    <a class="nav-link border-0" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Android</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link border-0" id="development-tab" data-toggle="tab" href="#development" role="tab" aria-controls="development" aria-selected="false">Development</a>
+                    <a class="nav-link border-0" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">Development</a>
                   </li>
                 </ul>
-                <div class="tab-content" id="myTabContent">
-                  <div class="tab-pane fade show active mt-5" id="ios" role="tabpanel" aria-labelledby="ios-tab">
+                <div class="tab-content" id="contactContent">
+                  <div class="tab-pane mt-5 fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
                     <form action="" method="POST" class="needs-validation" novalidate>
                       <div class="form-group">
-                        <input type="name" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Name*" id="name" required>
+                        <input type="name" class="form-control" placeholder="Name*" id="name" required>
                         <div class="valid-feedback">Valid.</div>
                         <div class="invalid-feedback">Please fill out this field.</div>
                       </div>
                       <div class="form-group">
-                        <input type="email" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Email*" id="email" required>
+                        <input type="email" class="form-control" placeholder="Email*" id="email" required>
                         <div class="valid-feedback">Valid.</div>
                         <div class="invalid-feedback">Please fill out this field.</div>
                       </div>
                       <div class="form-group">
-                        <input type="tel" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Phone" id="phone" required>
+                        <input type="tel" class="form-control" placeholder="Phone" id="phone" required>
                         <div class="valid-feedback">Valid.</div>
                         <div class="invalid-feedback">Please fill out this field.</div>
                       </div>
                       <div class="form-group">
-                        <select class="form-control form-control-md border-top-0 border-left-0 border-right-0" name="country" id="country" required>
+                        <select class="form-control form-control-md" name="country" id="country" required>
                           <option>Select Country</option>
                           <option value="India">India</option>
                           <option value="India">India</option>
@@ -236,30 +236,30 @@
                         <div class="invalid-feedback">Please fill out this field.</div>
                       </div>
                       <div class="form-group">
-                        <textarea name="message" id="message" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Message" rows="6"></textarea>
+                        <textarea name="message" id="message" class="form-control" placeholder="Message" rows="6"></textarea>
                       </div>
                       <button type="submit" class="btn btn-primary button mt-2">Submit</button>
                     </form>
                   </div>
-                  <div class="tab-pane fade mt-5" id="android" role="tabpanel" aria-labelledby="android-tab">
+                  <div class="tab-pane mt-5 fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
                     <form action="" method="POST" class="needs-validation" novalidate>
                       <div class="form-group">
-                        <input type="name" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Name*" id="name" required>
+                        <input type="name" class="form-control" placeholder="Name*" id="name" required>
                         <div class="valid-feedback">Valid.</div>
                         <div class="invalid-feedback">Please fill out this field.</div>
                       </div>
                       <div class="form-group">
-                        <input type="email" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Email*" id="email" required>
+                        <input type="email" class="form-control" placeholder="Email*" id="email" required>
                         <div class="valid-feedback">Valid.</div>
                         <div class="invalid-feedback">Please fill out this field.</div>
                       </div>
                       <div class="form-group">
-                        <input type="tel" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Phone" id="phone" required>
+                        <input type="tel" class="form-control" placeholder="Phone" id="phone" required>
                         <div class="valid-feedback">Valid.</div>
                         <div class="invalid-feedback">Please fill out this field.</div>
                       </div>
                       <div class="form-group">
-                        <select class="form-control form-control-md border-top-0 border-left-0 border-right-0" name="country" id="country" required>
+                        <select class="form-control form-control-md" name="country" id="country" required>
                           <option>Select Country</option>
                           <option value="India">India</option>
                           <option value="India">India</option>
@@ -271,30 +271,30 @@
                         <div class="invalid-feedback">Please fill out this field.</div>
                       </div>
                       <div class="form-group">
-                        <textarea name="message" id="message" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Message" rows="6"></textarea>
+                        <textarea name="message" id="message" class="form-control" placeholder="Message" rows="6"></textarea>
                       </div>
                       <button type="submit" class="btn btn-primary button mt-2">Submit</button>
                     </form>
                   </div>
-                  <div class="tab-pane fade mt-5" id="development" role="tabpanel" aria-labelledby="development-tab">
+                  <div class="tab-pane mt-5 fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
                     <form action="" method="POST" class="needs-validation" novalidate>
                       <div class="form-group">
-                        <input type="name" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Name*" id="name" required>
+                        <input type="name" class="form-control" placeholder="Name*" id="name" required>
                         <div class="valid-feedback">Valid.</div>
                         <div class="invalid-feedback">Please fill out this field.</div>
                       </div>
                       <div class="form-group">
-                        <input type="email" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Email*" id="email" required>
+                        <input type="email" class="form-control" placeholder="Email*" id="email" required>
                         <div class="valid-feedback">Valid.</div>
                         <div class="invalid-feedback">Please fill out this field.</div>
                       </div>
                       <div class="form-group">
-                        <input type="tel" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Phone" id="phone" required>
+                        <input type="tel" class="form-control" placeholder="Phone" id="phone" required>
                         <div class="valid-feedback">Valid.</div>
                         <div class="invalid-feedback">Please fill out this field.</div>
                       </div>
                       <div class="form-group">
-                        <select class="form-control form-control-md border-top-0 border-left-0 border-right-0" name="country" id="country" required>
+                        <select class="form-control form-control-md" name="country" id="country" required>
                           <option>Select Country</option>
                           <option value="India">India</option>
                           <option value="India">India</option>
@@ -306,7 +306,7 @@
                         <div class="invalid-feedback">Please fill out this field.</div>
                       </div>
                       <div class="form-group">
-                        <textarea name="message" id="message" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Message" rows="6"></textarea>
+                        <textarea name="message" id="message" class="form-control" placeholder="Message" rows="6"></textarea>
                       </div>
                       <button type="submit" class="btn btn-primary button mt-2">Submit</button>
                     </form>
@@ -322,10 +322,8 @@
     <!-- Footer starts here -->
     <footer class="footer" id="footer">
       <div class="container">
-        <div class="col-12">
-          <div class="copyright text-center">
-            <p>Design & Developed by Ujwal</p>
-          </div>
+        <div class="copyright text-center m-0">
+          <p class="m-0">Design & Developed by Ujwal</p>
         </div>
       </div>
     </footer>
