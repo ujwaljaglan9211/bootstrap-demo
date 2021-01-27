@@ -54,6 +54,15 @@ a.button {
   background: #82cac7;
   color: #fff;
 }
+.carousel-indicators li{
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #82cac7;
+}
+.carousel-indicators li.active{
+  background-color: #21357c;
+}
 .navbar{
   background: #fff;
 }
