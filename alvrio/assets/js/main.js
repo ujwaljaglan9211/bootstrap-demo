@@ -15,4 +15,11 @@
       }, false);
     });
   }, false);
+  $(document).ready(function(){
+    $('#portfolioSlider').carousel({
+      interval: 2000,
+      pause: "hover",
+      keyboard: true
+    });
+  });
 })();
